@@ -31,13 +31,13 @@ class TaskListView(LoginRequiredMixin, generic.ListView):
 
 class TaskCreateView(LoginRequiredMixin, generic.CreateView):
     model = Task
-    fields = ["content", "deadline", "tags"]
+    form_class = TaskForm
     success_url = reverse_lazy("to_do_list:task-list")
 
 
 class TaskUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Task
-    fields = ["content", "deadline", "tags", "completed"]
+    form_class = TaskForm
     success_url = reverse_lazy("to_do_list:task-list")
 
 
@@ -55,7 +55,7 @@ class TagListView(LoginRequiredMixin, generic.ListView):
 
 class TagCreateView(LoginRequiredMixin, generic.CreateView):
     model = Tag
-    class_form = TaskForm
+    fields = ["name"]
     success_url = reverse_lazy("to_do_list:tag-list")
 
 
