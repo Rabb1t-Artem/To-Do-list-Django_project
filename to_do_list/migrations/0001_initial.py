@@ -7,26 +7,44 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Tag',
+            name="Tag",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=50, unique=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=50, unique=True)),
             ],
         ),
         migrations.CreateModel(
-            name='Task',
+            name="Task",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('content', models.TextField()),
-                ('create_date', models.DateTimeField(auto_now_add=True)),
-                ('deadline', models.DateTimeField(blank=True, null=True)),
-                ('completed', models.BooleanField(default=False)),
-                ('tags', models.ManyToManyField(related_name='tasks', to='to_do_list.tag')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("content", models.TextField()),
+                ("create_date", models.DateTimeField(auto_now_add=True)),
+                ("deadline", models.DateTimeField(blank=True, null=True)),
+                ("completed", models.BooleanField(default=False)),
+                (
+                    "tags",
+                    models.ManyToManyField(related_name="tasks", to="to_do_list.tag"),
+                ),
             ],
         ),
     ]
