@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero bg-gradient-primary text-white py-5 px-4 text-center">
+    <div class="container">
+      <h1 class="display-3 font-weight-bold mb-4">Організуйте свій день легко!</h1>
+      <p class="lead mb-4">
+        To-Do List — це ваш персональний асистент для управління завданнями. 
+        Плануйте, пріоритезуйте й виконуйте свої справи вчасно.
+      </p>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+          <ul class="list-group list-group-flush text-left bg-transparent">
+            <li class="list-group-item bg-transparent border-0 text-white">
+              <i class="fas fa-check-circle text-warning"></i> Додавайте завдання за лічені секунди
+            </li>
+            <li class="list-group-item bg-transparent border-0 text-white">
+              <i class="fas fa-tags text-warning"></i> Використовуйте теги для категоризації
+            </li>
+            <li class="list-group-item bg-transparent border-0 text-white">
+              <i class="fas fa-chart-line text-warning"></i> Відстежуйте прогрес та досягнення
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="{% url 'to_do_list:task-list' %}" class="btn btn-warning btn-lg mt-4 px-5 py-3">
+        Почати зараз
+      </a>
+    </div>
+  </div>
+  
+{% endblock content %}
