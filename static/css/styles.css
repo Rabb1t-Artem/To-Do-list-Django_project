@@ -1,0 +1,206 @@
+Загальні стилі
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container-fluid {
+  margin-top: 20px;
+}
+
+/* Сторінка */
+.content-block {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Home */
+
+.hero {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero .list-group-item {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+
+.hero .btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+
+
+/* Бокове меню */
+.sidebar-nav {
+  background-color: #343a40;
+  border-radius: 20px;
+  padding-left: 0;
+}
+
+.sidebar-nav .list-group-item {
+  background-color: #343a40;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.sidebar-nav .list-group-item:hover {
+  background-color: #495057;
+}
+
+.sidebar-nav .list-group-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-nav .list-group-item a:hover {
+  color: #ddd;
+}
+
+.sidebar-nav .list-group-item {
+
+  border: none;
+}
+
+
+/* Пагінація */
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-item a,
+.pagination .page-item span {
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.pagination .page-item a:hover,
+.pagination .page-item span:hover {
+  background-color: #0056b3;
+}
+
+.pagination .page-item.active span {
+  background-color: #28a745;
+}
+
+.pagination .page-item.disabled a,
+.pagination .page-item.disabled span {
+  background-color: #ddd;
+  color: #aaa;
+  pointer-events: none;
+}
+
+/* Форми */
+form {
+  margin-top: 20px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+form .form-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+form .form-group input,
+form .form-group select,
+form .form-group textarea {
+  border-radius: 4px;
+}
+
+form input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Відступи для елементів */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Кнопки */
+/* button.tbn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.tbn:hover {
+  opacity: 0.9;
+}
+
+button.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.btn-danger:hover {
+  background-color: #c82333;
+} */
